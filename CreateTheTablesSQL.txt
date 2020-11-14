@@ -1,0 +1,116 @@
+USE [ResumeAngularDB]
+
+/****** Object:  Table [dbo].[Contact]    Script Date: 10/20/2020 2:30:56 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Contact](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[firstName] [nchar](10) NULL,
+	[lastName] [nchar](10) NULL,
+	[email] [nvarchar](50) NULL,
+	[street] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[city] [nvarchar](50) NULL,
+	[zip] [nchar](10) NULL,
+	[phone] [nchar](10) NULL,
+ CONSTRAINT [PK_Contact] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[Certification](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[institution] [nvarchar](50) NULL,
+	[title] [nvarchar](50) NULL,
+	[dateIni] [nchar](10) NULL,
+	[contact] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Certification]  WITH CHECK ADD  CONSTRAINT [FK_Certification_ToContact] FOREIGN KEY([contact])
+REFERENCES [dbo].[Contact] ([Id])
+GO
+
+ALTER TABLE [dbo].[Certification] CHECK CONSTRAINT [FK_Certification_ToContact]
+GO
+
+
+CREATE TABLE [dbo].[Education](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[institution] [nvarchar](50) NULL,
+	[title] [nvarchar](50) NULL,
+	[dateIni] [nchar](10) NULL,
+	[dateFin] [nchar](10) NULL,
+	[country] [nchar](10) NULL,
+	[city] [nchar](10) NULL,
+	[contact] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Education]  WITH CHECK ADD  CONSTRAINT [FK_Education_ToContact] FOREIGN KEY([contact])
+REFERENCES [dbo].[Contact] ([Id])
+GO
+
+ALTER TABLE [dbo].[Education] CHECK CONSTRAINT [FK_Education_ToContact]
+GO
+
+
+CREATE TABLE [dbo].[Experience](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[company] [nvarchar](50) NULL,
+	[city] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[contact] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Experience]  WITH CHECK ADD  CONSTRAINT [FK_Experience_ToContact] FOREIGN KEY([contact])
+REFERENCES [dbo].[Contact] ([Id])
+GO
+
+ALTER TABLE [dbo].[Experience] CHECK CONSTRAINT [FK_Experience_ToContact]
+GO
+
+CREATE TABLE [dbo].[ExperienceItem](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[companyId] [int] NOT NULL,
+	[dateIni] [nchar](10) NULL,
+	[dateFin] [nchar](10) NULL,
+	[title] [nvarchar](50) NULL,
+	[description] [nvarchar](max) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[ExperienceItem]  WITH CHECK ADD  CONSTRAINT [FK_ExperienceItem_ToExperience] FOREIGN KEY([companyId])
+REFERENCES [dbo].[Experience] ([Id])
+GO
+
+ALTER TABLE [dbo].[ExperienceItem] CHECK CONSTRAINT [FK_ExperienceItem_ToExperience]
+GO
+
+

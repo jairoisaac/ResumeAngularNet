@@ -1,0 +1,10 @@
+ <div *ngFor='let company of Experience'>
+    <h3>{{company.company}}</h3>
+    <h4>{{company.country+" "+company.city}}</h4>
+        <div *ngFor='let items of company.experienceItems'>
+          <li>{{items.title+" "+items.dateIni+" - "+items.dateFin}}</li>
+          <div> 
+              <p>{{items.description}}</p>
+          </div>
+        </div>
+ </div>    

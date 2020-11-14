@@ -1,0 +1,9 @@
+<div>
+  <h6>
+    {{Certification[myIndex]}}
+  </h6>
+  <div>
+    <img [src]='Certification[myIndex]' [style.width.px]='imageWidth' [alt]="myImage">
+  </div>
+</div>
+<button class="btn box-shadow" (click)="incrementmyIndex()">Next</button>

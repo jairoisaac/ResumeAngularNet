@@ -1,0 +1,167 @@
+[
+    {
+      "Id": 1,
+      "company": "Cigna",
+      "city": "Bogota",
+      "country": "Colombia",
+      "contact": 8,
+      "Contact1": null,
+      "ExperienceItems": [
+        {
+          "Id": 1,
+          "companyId": 1,
+          "dateIni": "1995      ",
+          "dateFin": "2000      ",
+          "title": "Support",
+          "description": "Software support and system upgrading for the SPD customer service unit. ",
+          "Experience": null
+        },
+        {
+          "Id": 2,
+          "companyId": 1,
+          "dateIni": "1995      ",
+          "dateFin": "2000      ",
+          "title": "Software Developer",
+          "description": "Migrate an application made in Clipper to one with Access and Visual Basic for Applications, then to  MS SQL Server and Visual Basic, this improve the speed with which the users of the system, processes billing, claims and information services for the policy holders in  a multiuser system for a network environment.",
+          "Experience": null
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "company": "Self-Employed",
+      "city": "Sanford",
+      "country": "United States",
+      "contact": 8,
+      "Contact1": null,
+      "ExperienceItems": [
+        {
+          "Id": 3,
+          "companyId": 2,
+          "dateIni": "2002      ",
+          "dateFin": "2005      ",
+          "title": "Software Developer",
+          "description": "Developed an application using visual basic, synchronizing music with lights, giving a light show and producing a reusable file for popular songs, when a song play, a file for this song make a light system play harmoniously with the song.  ",
+          "Experience": null
+        },
+        {
+          "Id": 4,
+          "companyId": 2,
+          "dateIni": "2011      ",
+          "dateFin": "2020      ",
+          "title": "ADO.NET ",
+          "description": "Developed a web application with Microsoft ADO.NET MVC using C# with OOP.",
+          "Experience": null
+        },
+        {
+          "Id": 5,
+          "companyId": 2,
+          "dateIni": "2011      ",
+          "dateFin": "2020      ",
+          "title": "ADO.NET ",
+          "description": "The application uses MS SQL server database.",
+          "Experience": null
+        },
+        {
+          "Id": 6,
+          "companyId": 2,
+          "dateIni": "2011      ",
+          "dateFin": "2020      ",
+          "title": "ADO.NET ",
+          "description": "Using JavaScript, jQuery, jQuery Mobile, extensive use of jQuery Ajax. Entity Framework.",
+          "Experience": null
+        },
+        {
+          "Id": 7,
+          "companyId": 2,
+          "dateIni": "2011      ",
+          "dateFin": "2020      ",
+          "title": "ADO.NET ",
+          "description": "The application is www.drinks4bars.com, focused on mobile devices. A person can check and get a tutorial of the basic cocktails recipes every bartender should know in a graphic way by any of the 61 ingredients. ",
+          "Experience": null
+        },
+        {
+          "Id": 8,
+          "companyId": 2,
+          "dateIni": "2011      ",
+          "dateFin": "2020      ",
+          "title": "ADO.NET ",
+          "description": "With the this technology and  Bootstrap, to take control of income for individuals who work in different places at different hourly rates of payment, developed this web application site www.shifts77.com. ",
+          "Experience": null
+        },
+        {
+          "Id": 9,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "Developed an application for managing the shifts for On Call workers who work in different places at different hourly rates of payment. ",
+          "Experience": null
+        },
+        {
+          "Id": 10,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "It has a database on the iPhone, using Core Data, TableViews, FetchResultController.",
+          "Experience": null
+        },
+        {
+          "Id": 11,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "it has a calendar schedule with a Collectionview of all the shifts with Gesture Recognizers to get data of a particular day.",
+          "Experience": null
+        },
+        {
+          "Id": 12,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "The application allows to input income using a PickupViews and a DatePicker. ",
+          "Experience": null
+        },
+        {
+          "Id": 13,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "It allows getting reports for a range of dates using the calendar as an Embedded ViewController, the user can select  a particular company or all the companies, giving wide information of each shift, like payments, hours etc. and a consolidation of the total money earn, number of shifts, averages, so the worker has all the information of his income and schedule in a superfast, and secure way because the data is on his own iPhone.",
+          "Experience": null
+        },
+        {
+          "Id": 14,
+          "companyId": 2,
+          "dateIni": "2016      ",
+          "dateFin": "2020      ",
+          "title": "SWIFT for IOS",
+          "description": "•\tThis application is on the APPLE STORE, its name is Shifts 00.",
+          "Experience": null
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "company": "HYATT, DISNEY, UNIVERSAL, HILTON, ROSEN HOTELS.",
+      "city": "Orlando",
+      "country": "USA",
+      "contact": 8,
+      "Contact1": null,
+      "ExperienceItems": [
+        {
+          "Id": 15,
+          "companyId": 3,
+          "dateIni": "2004      ",
+          "dateFin": "2020      ",
+          "title": "BANQUETS EVENTS SPECIALIST",
+          "description": "In charge of setting the event according to the diverse types: Plated, buffets, Stations, Coffee Breaks or Bars; attention to Clients making sure they have an excellent experience and at the end of the event clear the room breaking down everything to put back all the elements back on its place.",
+          "Experience": null
+        }
+      ]
+    }
+  ]

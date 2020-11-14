@@ -1,0 +1,24 @@
+[
+{
+"Id": 1,
+"institution": "INCCA UNIVERSITY",
+"title": "Industrial Engineer",
+"dateIni": "2078 ",
+"dateFin": "2084 ",
+"country": "Colombia ",
+"city": "Bogota ",
+"contact": 8,
+"Contact1": null
+},
+{
+"Id": 2,
+"institution": "ANDES UNIVERSITY",
+"title": "Information Systems for the Organization",
+"dateIni": "1987 ",
+"dateFin": "1988 ",
+"country": "Colombia ",
+"city": "Bogota ",
+"contact": 8,
+"Contact1": null
+}
+]

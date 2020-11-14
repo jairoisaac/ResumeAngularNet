@@ -1,0 +1,8 @@
+﻿@model IEnumerable<ResumeAngularNet.Models.Certification>
+
+<h1>Certifications</h1>
+<p>Count: @Model.Count()</p>
+@foreach (var e in Model)
+{
+    <li>@e.Title</li>
+}

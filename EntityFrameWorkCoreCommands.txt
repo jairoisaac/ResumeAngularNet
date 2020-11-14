@@ -1,0 +1,29 @@
+CREATING THE MODELS AND CONTEXT WHEN THE DATABASE IS READY
+
+//Scaffold-DbContext "Data Source=(localdb)\ProjectsV13;Initial Catalog=ResumeAngularDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False -OutputDir Models"
+
+
+Data Source=(localdb)\ProjectsV13;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+
+Data Source=(localdb)\ProjectsV13;Initial Catalog=ResumeAngularDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+
+//Server=.\SQLExpress;Database=SchoolDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+//Scaffold-DbContext "Server=.\SQLExpress;Database=ResumeAngularDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Scaffold-DbContext "Server=(localdb)\ProjectsV13;Database=ResumeAngularDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Scaffold-DbContext "Server=(localdb)\ProjectsV13;Database=ResumeAngularDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models22
+
+===================================================================================================
+FOR MIGRATIONS:
+=============================
+staying on the directory of the application:
+on the command line screen:
+
+dotnet ef migrations add InitialDb
+
+it creates a folder called migrations
+	two files, a snapshot of the database and a class of our migration
+	migrations can go from one version to another ...
+                               
