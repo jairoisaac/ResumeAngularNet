@@ -24,7 +24,17 @@
           "title": "Software Developer",
           "description": "Migrate an application made in Clipper to one with Access and Visual Basic for Applications, then to  MS SQL Server and Visual Basic, this improve the speed with which the users of the system, processes billing, claims and information services for the policy holders in  a multiuser system for a network environment.",
           "Experience": null
+        },
+        {
+          "Id": 3,
+          "companyId": 1,
+          "dateIni": "1995      ",
+          "dateFin": "2000      ",
+          "title": "Software Developer",
+          "description": "Recreate the whole application in access.",
+          "Experience": null
         }
+
       ]
     },
     {
